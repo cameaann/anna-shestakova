@@ -1,0 +1,28 @@
+@import "main.scss";
+@import "abstracts/variables";
+@import "abstracts/functions";
+
+.contact_board{
+    // transform: translate(-30%, -50%);
+
+    &__myPhotoBox{
+        display: inline-block;
+        margin-right: 10rem;
+    }
+
+    &__contacts{
+        display: inline-block;
+        font-size: 1.6rem;
+        transform: translateY(-80%);
+        text-align: justify;
+    }
+}
+
+a.btn{
+    line-height: 7rem;
+}
+
+.myPhoto{
+    border-radius: 50rem;
+}
+

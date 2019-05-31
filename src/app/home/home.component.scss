@@ -1,0 +1,18 @@
+
+@import "abstracts/variables";
+@import "abstracts/functions";
+
+.wrap{
+    width:$wrap-width;
+    margin: 0 auto;
+}
+
+.container-project{
+    position: relative;
+    max-width: $row-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: $horizontal-gutter;
+}
+

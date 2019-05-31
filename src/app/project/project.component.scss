@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+
+.project-card{
+    margin:0.5rem;
+    padding:1rem;
+    font-size: 1.5rem;
+    background-color: $light-grey;
+    // width:25rem;
+    height:20rem;
+
+    &:hover{
+        transform: scale(1.13rem);
+        transform: translateY(-.5rem);
+        box-shadow: 0 .4rem 1.8rem .3rem rgba(173,159,173,1);
+    }
+  
+}

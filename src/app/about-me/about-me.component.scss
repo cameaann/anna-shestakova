@@ -1,0 +1,20 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.sub-section{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color:$grey-color;
+}
+
+.list{
+    margin:2rem 3rem;
+    font-size:1.4rem;
+    text-align: left;
+    &_noStyle{
+        list-style-type:none;
+    }
+}

@@ -1,0 +1,15 @@
+.section{
+    padding: 10rem 0;
+   
+    &-contact{
+        text-align: center;
+        margin: 15rem auto;
+        padding: 0;
+        width:71rem;
+    }
+
+    &-works{
+        background-color: $light-grey-1;
+    }
+    
+}
