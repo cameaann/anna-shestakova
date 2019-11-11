@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { FormContactMeComponent } from './form-contact-me/form-contact-me.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HomeComponent,
     ContactComponent,
     ProjectComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    FormContactMeComponent,
+    HeaderComponent
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

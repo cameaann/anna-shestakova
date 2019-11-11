@@ -4,6 +4,7 @@ export const PROJECTS: any = [
         id: 1,
         description: "Landing Page",
         iconUrl: '',
+        src: "https://cameaann.github.io/angular-page/",
         longDescription: "This Landing Page converts visitors into signups. Create landing page with email capture."
     },
     {

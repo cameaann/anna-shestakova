@@ -1,10 +1,10 @@
-
+@import "abstracts/mixins";
 @import "abstracts/variables";
 @import "abstracts/functions";
 
-.wrap{
-    width:$wrap-width;
-    margin: 0 auto;
+
+.section-works{
+    background-color: $light-grey-1;
 }
 
 .container-project{
@@ -14,5 +14,12 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: $horizontal-gutter;
+
+    @include response(tab-port){
+        max-width: $row-width/2;
+        grid-template-columns: auto auto;
+        grid-gap: $horizontal-gutter/2;
+        padding: 0 5rem;
+    }
 }
 

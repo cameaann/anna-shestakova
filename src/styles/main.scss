@@ -9,11 +9,14 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/button.scss';
+@import 'components/button';
+@import 'components/bg-video';
 @import 'components/card';
+@import 'components/story';
+@import 'components/form';
+
 
 @import 'layout/grid';
-@import 'layout/header';
 @import 'layout/section';
 
 @import 'themes/dark';

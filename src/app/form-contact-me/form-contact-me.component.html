@@ -1,0 +1,25 @@
+      <div class="mail">
+            <div class="mail__form">
+                    <form [formGroup] = "contactForm" (ngSubmit) = "onSubmit()" class="form">
+                        <div class="tab-port__row">
+                                <div class = "form__group tab-port__row-1of2">
+                                        <label class="form__label" for="email">Email</label>
+                                        <input class="form__input" type = "text" formControlName = "email" name="email">
+                                    </div>
+                                    <div class = "form__group tab-port__row-1of2">
+                                            <label class="form__label" for="name">Name</label>
+                                            <input class="form__input" type = "text" formControlName = "name" name="name">
+                                    </div>
+                        </div>                            
+                        <div class="tab-port__row">
+                                <div class = "form__group">
+                                        <label  class="form__label" for="message">Message</label>
+                                        <textarea class="form__textarea" name="" id="" cols="30" rows="10" formControlName = "message" name="message"></textarea>
+                                </div>
+                        </div>
+                        
+                            <button class="btn btn__form" type = "submit" [disabled] ="!contactForm.valid">Send Message</button>
+                    </form>
+            </div>         
+      </div>     
+

@@ -2,11 +2,21 @@
 $grey-color:#666666;
 $light-grey: #e7e0e0;
 $light-grey-1: #f7f7f7;
+$light-grey-2: #eee;
 $dark-grey:#383535;
+$white-color:#fff;
+$green-color:rgb(25, 190, 53);
+$dark-green-color:rgb(17, 119, 34);
 
 
 //GRID
-$wrap-width:130rem;
-$row-width: 120rem;
+$wrap-width:140rem;
+$row-width: 130rem;
+$form-row-width:80rem;
 $vertical-gutter: 8rem;
 $horizontal-gutter: 3rem;
+$form-row-gutter: 1rem;
+$vertical-gutter-small:6rem;
+
+//FONT
+$default-font-size:1.6rem;

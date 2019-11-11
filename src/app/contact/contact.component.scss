@@ -2,27 +2,70 @@
 @import "abstracts/variables";
 @import "abstracts/functions";
 
-.contact_board{
-    // transform: translate(-30%, -50%);
 
-    &__myPhotoBox{
-        display: inline-block;
-        margin-right: 10rem;
+.contact_box{
+    box-sizing: border-box;
+    width:60%;
+    margin: 5rem auto; 
+    font-size: 1.8rem;
+
+    @include clearfix;
+
+    &__shape{
+        width:30rem;
+        padding:3rem;
+        margin: 0 auto;
     }
 
-    &__contacts{
-        display: inline-block;
-        font-size: 1.6rem;
-        transform: translateY(-80%);
-        text-align: justify;
+    &__img{
+        width:100%;
+        border-radius: 50%;
+    }  
+
+    @include response(tab-port){
+        width:65%;
+        margin: 0 auto;
+        padding:4rem;
+
+        &__shape{
+            display:inline-block;
+            width:23rem;
+            margin:0 auto;
+            padding:3rem;
+        }
+    } 
+    
+    @include response(phone){
+        width:100%;
+        margin: 0 auto;
+        padding:2.5rem;
+
+        &__shape{
+            display:block;
+            width:30rem;
+            margin:0 auto;
+            padding:3rem;
+        }
+    } 
+}
+
+.contact__text{
+    font-size: 1.8rem;
+    padding: 5rem;
+    vertical-align: super;
+
+    @include response(tab-port){
+        padding: 2rem;
+        font-size: $default-font-size;
+        margin: 0 auto;
     }
-}
 
-a.btn{
-    line-height: 7rem;
-}
+    @include response(phone){
+        display:block;
+        padding: 2rem;
+        font-size: 1.8rem;
+        width:70%;
+        margin: 0 auto;
+    } 
 
-.myPhoto{
-    border-radius: 50rem;
 }
-

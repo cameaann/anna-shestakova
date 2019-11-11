@@ -1,33 +1,40 @@
+
+//FUNCTIONALITY
 .card{
     position: relative;
-    height: 65rem;
+    height: 67rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
 
     &__side{
         position: absolute;
-        height: 65rem;
+        top:0;
+        left:0;
+        height: 67rem;
         width:100%;
-        background-color: rgba($light-grey, 0.8);
-        font-size: 1.6rem;
-        padding: 2.5rem;
         text-align: center; 
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($dark-grey, .15);
-        transition: all .8s ease;
+        transition: all 1s ease;
         backface-visibility: hidden;
+        overflow: hidden;
 
-        &--front{
-           
+        &--front{           
         }
 
         &--back{
+            padding: 2rem;
             transform: rotateY(180deg);
+            ul{
+                li{
+                    font-size: $default-font-size;
+                }
+            }
         }
     }
 
     &:hover &__side--front{
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
     &:hover &__side--back{
         transform: rotateY(0);
@@ -35,10 +42,139 @@
 
     &__icon{
         font-size: 3rem;
-        display:inline-block;
         margin-bottom:.5rem;
         background-image: linear-gradient(to right, $grey-color, $dark-grey);
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
+        vertical-align: sub;
+        text-align: center;
     }
+
+    // FRONT SIDE STYLING
+
+    &__heading{
+        font-size: 2.15rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    &__picture{
+        background-size: cover;
+        border-radius: 3px;
+        height:35rem;
+        background-blend-mode: color;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);        
+        
+        &--1{
+            background-image: linear-gradient(to right, $grey-color, $dark-grey),
+             url('/assets/img/pic1.jpg');
+        }
+        &--2{
+            background-image: linear-gradient(to right, $grey-color, $dark-grey),
+             url('/assets/img/pic2.jpg');
+            
+        }
+        &--3{
+            background-image: linear-gradient(to right, $grey-color, $dark-grey),
+            url('/assets/img/pic3.jpg');
+        }
+        &--4{
+            background-image: linear-gradient(to right, $grey-color, $dark-grey),
+            url('/assets/img/pic4.jpg');         
+        }
+    }
+
+    &__details{
+        font-size:1.8rem;
+        .list{
+            margin:2rem 3rem;
+            font-size:1.4rem;
+            text-align: left;
+            
+            &_noStyle{
+                list-style-type:none;
+            }
+        }
+    }
+
+    @include response(tab-port){
+        border-radius: 3px;
+        height: auto;
+        box-shadow: 0 1.5rem 4rem rgba($dark-grey, .15);    
+
+    &__side{
+        height: auto;
+        position: relative;
+        box-shadow:none;
+
+        &--back{
+            transform: translate(0);
+            position: relative;
+            width: 100%;
+            top:0;
+            left: 0;
+        }
+          
+    }   
+
+ &:hover &__side--front{
+     transform: rotateY(0);
+            }
+ 
+
+    // FRONT SIDE STYLING
+
+    &__heading{
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    &__picture{
+        height:25rem;
+    }
+
+    &__details{
+        font-size:1.6rem;
+         }
+    }
+    @include response(phone){
+        border-radius: 3px;
+        height: auto;
+        box-shadow: 0 1.5rem 4rem rgba($dark-grey, .15);
+    
+    &__side{
+        height: auto;
+        position: relative;
+        box-shadow:none;
+    
+        &--back{
+            transform: translate(0);
+            position: relative;
+            width: 100%;
+            top:0;
+            left: 0;
+        }
+          
+    }   
+    
+    &:hover &__side--front{
+     transform: rotateY(0);
+            }
+    
+    
+    // FRONT SIDE STYLING
+    
+    &__picture{
+        height:25rem;
+    }
+    
+    }
+       
+
+
 }
+

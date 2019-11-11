@@ -1,72 +1,18 @@
-<header class="header">
-  <div class="header__main-logo"></div>
-  <div class="header__text-box">
-    <h1 class="heading-primary">
-      <span class="heading-primary--main">anna shestakova</span>
-      <span class="heading-primary--sub">ui designer</span>
-    </h1>
-    <a routerLink="/contacts" class="btn btn--animated">CONTACT</a>
-
-  </div>
-</header>
+<app-header></app-header>
 <main>
-  <div class = "wrap">
-      <section class = "section section-works">
-          <div class="u-center-text">
-              <h2 class="heading-secondary">My works</h2>
-          </div>
-        <div class="container-project">
-              <app-project *ngFor='let project of projects' [project]='project'></app-project>
-        </div>
-      </section>
-      <section class="section">
-          <div class="u-center-text">
-              <h2 class="heading-secondary">About me</h2>
-          </div>
-          <app-about-me></app-about-me>
-      </section>
-  </div>
-  
+    <section class="section section-works">
+      <div class="u-center-text">
+        <h2 class="heading-secondary">My works</h2>
+      </div>
+      <div class="container-project">
+        <app-project *ngFor='let project of projects' [project]='project'></app-project>
+      </div>
+    </section>
+    <section class="section">
+      <div class="u-center-text">
+        <h2 class="heading-secondary">About me</h2>
+      </div>
+      <app-about-me></app-about-me>
+    </section>
 </main>
 
-
-
-
-
-
-
-<!--
-  <section>
-    <div class="rows">
-      <div class = "col-1-of-2">col-1-of-2</div>
-      <div class = "col-1-of-2">col-1-of-2</div>
-    </div>
-    <div class="row">
-      <div class = "col-1-of-3">col-1-of-3</div>
-      <div class = "col-1-of-3">col-1-of-3</div>
-      <div class = "col-1-of-3">col-1-of-3</div>
-    </div>
-    <div class="row">
-      <div class = "col-1-of-4">col-1-of-4</div>
-      <div class = "col-1-of-4">col-1-of-4</div>
-      <div class = "col-1-of-4">col-1-of-4</div>
-      <div class = "col-1-of-4">col-1-of-4</div>
-    </div>
-    <div class="row">
-      <div class = "col-1-of-3">col-1-of-3</div>
-      <div class = "col-2-of-3">col-2-of-3</div>
-    </div>
-    <div class="row">
-      <div class = "col-1-of-4">col-1-of-4</div>
-      <div class = "col-3-of-4">col-3-of-4</div>
-    </div>
-    <div class="row">
-      <div class = "col-1-of-4">col-2-of-4</div>
-      <div class = "col-1-of-4">col-2-of-4</div>
-      <div class = "col-2-of-4">col-2-of-4</div>
-    </div>
-
-    
-  </section>
-
--->

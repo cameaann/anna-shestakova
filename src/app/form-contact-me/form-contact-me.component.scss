@@ -1,0 +1,29 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+.mail{
+    height:55rem;
+    
+
+    &__form{
+        width:70%;
+        margin: 0 auto;
+        // padding:5rem;
+
+
+        @include response(tab-land){
+            width:65%;
+        }
+        @include response(tab-port){
+            width:80%;
+        }
+
+        @include response(phone){
+            width:100%;
+        }
+
+        
+    }
+}
+

@@ -1,15 +1,12 @@
 .section{
     padding: 10rem 0;
    
-    &-contact{
-        text-align: center;
-        margin: 15rem auto;
-        padding: 0;
-        width:71rem;
+    @include response(phone){
+        margin:0;
     }
 
-    &-works{
-        background-color: $light-grey-1;
-    }
-    
+    // &-contacts{
+    //     // padding:0;
+    //     // position:relative;
+    // }
 }

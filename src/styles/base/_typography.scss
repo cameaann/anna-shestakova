@@ -1,9 +1,10 @@
 body{
-    margin: 0;
-    padding: 30px;
+    // margin: 0;
+    // padding: 30px;
     color: $grey-color;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Oswald', sans-serif;
+    line-height: 1.7;
 }
 
 .heading-primary{
@@ -21,6 +22,16 @@ body{
         animation-name: moveInLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+
+        @include response(tab-port){
+            font-size: 4rem;
+            letter-spacing: .7rem;
+        }
+
+        @include response(phone){
+            font-size: 3rem;
+            letter-spacing: .5rem;
+        }
     }
 
     &--sub{
@@ -32,6 +43,11 @@ body{
         animation-name: moveInRight;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+
+        @include response(tab-port){
+            font-size: 1rem;
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -44,6 +60,7 @@ body{
     margin-bottom: 5rem;
     background-image: linear-gradient(to right, $light-grey, $dark-grey);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 .heading-tertiary{
@@ -54,10 +71,22 @@ body{
     color: $grey-color;
     text-transform: uppercase;
 }
+
+.heading-section{
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+    font-weight:400;
+    margin-top: 2rem;
+    color: $grey-color;
+    text-transform: uppercase;
+}
+
 .heading-sub-section{
     margin-bottom:1rem;
     color: $grey-color;
     font-weight:400;
     // font-style: italic;
     text-transform: uppercase;
+    width:100%;
+
 }
