@@ -2,11 +2,8 @@
     padding: 10rem 0;
    
     @include response(phone){
+        padding: 5rem 0;
         margin:0;
     }
 
-    // &-contacts{
-    //     // padding:0;
-    //     // position:relative;
-    // }
 }

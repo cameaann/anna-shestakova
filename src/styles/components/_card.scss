@@ -19,8 +19,6 @@
         backface-visibility: hidden;
         overflow: hidden;
 
-        &--front{           
-        }
 
         &--back{
             padding: 2rem;
@@ -43,12 +41,15 @@
     &__icon{
         font-size: 3rem;
         margin-bottom:.5rem;
+        padding:.5rem;
         background-image: linear-gradient(to right, $grey-color, $dark-grey);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         vertical-align: sub;
         text-align: center;
+
+     
     }
 
     // FRONT SIDE STYLING
