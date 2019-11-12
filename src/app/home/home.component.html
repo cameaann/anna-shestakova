@@ -1,5 +1,11 @@
 <app-header></app-header>
 <main>
+    <section class="section">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">About me</h2>
+        </div>
+        <app-about-me></app-about-me>
+      </section>
     <section class="section section-works">
       <div class="u-center-text">
         <h2 class="heading-secondary">My works</h2>
@@ -7,12 +13,6 @@
       <div class="container-project">
         <app-project *ngFor='let project of projects' [project]='project'></app-project>
       </div>
-    </section>
-    <section class="section">
-      <div class="u-center-text">
-        <h2 class="heading-secondary">About me</h2>
-      </div>
-      <app-about-me></app-about-me>
-    </section>
+    </section> 
 </main>
 
