@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-sass",
+  "name": "sha-website",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.18",
-    "@angular/cli": "~7.1.0",
-    "@angular/compiler-cli": "~7.1.0",
+    "@angular/cli": "8.3.18",
+    "@angular/compiler-cli": "8.3.18",
     "@angular/language-service": "~7.1.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "^2.0.8",
