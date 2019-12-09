@@ -1,13 +1,25 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
-.project-card{
+.project{
+
+&__title{
+    font-size: 2.5rem;
+    position: absolute;
+    color:$light-grey;
+    vertical-align: middle;
+    @include central;
+}
+
+&__card{
+    position: relative;
     margin:0.5rem;
     padding:1rem;
     font-size: $default-font-size;
     background-color: $light-grey;
     // width:25rem;
     height:20rem;
-    
+
 
     &:hover{
         transform: scale(1.13rem);
@@ -15,9 +27,26 @@
         box-shadow: 0 .4rem 1.8rem .3rem rgba(173,159,173,1);
         cursor:pointer;
     }  
-}
 
-a{
-    text-decoration: none;
-    color:$grey-color;        
-}
+    &-1 {
+        background-size: cover;
+        background-image:  linear-gradient(to right bottom,  
+        rgba($light-grey, 0.8),
+        rgba($grey-color, 0.8)),
+        url('src/assets/img/thumnail_your-tour.jpg');
+         }
+    &-4 {
+        background-size: cover;
+        background-image:  linear-gradient(to right bottom,  
+        rgba($light-grey, 0.8),
+        rgba($grey-color, 0.8)),
+        url('src/assets/img/thumnail_hotel-page.jpg');
+        }
+    } 
+      
+ }
+    
+    a {
+        text-decoration: none;
+        color:$grey-color;        
+    }
